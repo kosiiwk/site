@@ -1,0 +1,81 @@
+/*^^^used for addig basic colors in this site, var(--...)*/ 
+:root{
+    --primary-color:#000000;
+    --footer-color:#9F9F9F;
+    --button-color:#B88E2F;
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+ body{
+      font-family: 'Poppins', sans-serif;
+ }
+
+.header {
+    padding-block: 36px;
+}
+
+.header__container {
+    max-width: 1440px;
+    width: 100%;
+    margin-inline:auto;
+}
+
+/* ==========================================================================
+   FLUID RESPONSIVE DESIGN (clamp)
+   --------------------------------------------------------------------------
+   clamp(MIN, PREFERRED, MAX) is a CSS function that sets a fluid value 
+   that scales between a minimum and maximum range depending on the viewport size.
+   
+   Syntax: clamp(minimum_size, ideal_fluid_size, maximum_size)
+   
+   Why we use clamp() here:
+   - On large screens (1440px+): It keeps the exact Figma layout dimensions (e.g., gap: 75px).
+   - On smaller screens (laptops/tablets): It automatically shrinks the gaps/paddings 
+     so navigation links and icons don't overflow or get pushed off-screen.
+   ========================================================================== */
+
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+/* Dynamically adjusts horizontal padding based on screen width */
+    padding-left: clamp(20px, 4vw, 54px);
+    padding-right: clamp(20px, 6vw, 100px);
+}
+.header__logo{
+    margin-right: 266px;
+}
+
+.header__list{
+    display: flex;
+/* Fluid gap: minimum 20px, scales with viewport (4vw), maximum 75px (Figma spec) */
+    gap: clamp(20px, 4vw, 75px);
+}
+
+.header__list-link{
+    font-weight:500;
+    color: #000000;
+    transition: color 0.3s ease-in-out;
+}
+
+.header__list-link:hover{
+    color: var(--button-color);
+}
+
+.header__buttons{
+    display: flex;
+/* Fluid gap between header icons */
+    gap: clamp(15px, 2.5vw, 45px);
+    margin-left:158px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration:none;
+}
