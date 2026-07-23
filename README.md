@@ -1,3 +1,5 @@
+**Day l** 
+
 # Furniro - E-Commerce Header Practice
 
 This project marks the official start of my journey into Front-End Development! 🚀
