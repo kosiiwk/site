@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ihihi</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <title>Furniro</title>
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="images/logo-img.svg">
 </head>
 <body>
     <header class="header">
         <div class="header__container">
             <nav class="header__nav">
-                <img class="header__logo" src="../images/logo.svg?v=2" alt="Logo">
+                <img class="header__logo" src="images/logo.svg?v=2" alt="Logo">
                 <ul class="header__list">
                     <li class="header__list-item">
                         <a class="header__list-link" href="/">Home</a>
@@ -30,28 +31,70 @@
                 </ul>
                 <ul class="header__buttons">
                     <li>    
-                        <a class="header__account" href="/">
-                            <img src="../images/account.svg">
+                        <a class="header__buttons-link" href="/">
+                            <img src="images/account.svg">
                         </a>
                     </li>
                     <li>
-                        <a class="header__search" href="/">
-                            <img src="../images/search.svg">
+                        <a class="header__buttons-link" href="/">
+                            <img src="images/search.svg">
                         </a>
                     </li>
                     <li>
-                        <a class="header__liked" href="/">
-                            <img src="../images/liked.svg">
+                        <a class="header__buttons-link" href="/">
+                            <img src="images/liked.svg">
                         </a>
                     </li>
                     <li>
-                        <a class="header__cart" href="/">
-                            <img src="../images/cart.svg">
+                        <a class="header__buttons-link" href="/">
+                            <img src="images/cart.svg">
                         </a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
+<!-- Wraps main content only (excludes header navigation & footer) -->
+    <main>
+<!-- <section> = semantic content block; <div> = pure styling wrapper -->
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <div class="hero__text">
+                        <p class="hero__subtitle">New Arrival</p>
+                        <h1 class="hero__title">Discover Our <br>New Collection</h1>
+                        <p class="hero__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="hero__buttons">
+                        <a href="/" class="hero__button">BUY NOW</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="categories__content">
+                <div class="categories__text">
+                    <h2 class="categories__title">Browse The Range</h2>
+                    <p class="categories__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                    <ul class="categories__list">
+                        <li class="categories__list-item">
+                                <img class="categories__list-image" src="images/Dining.png" alt="Category 1">
+                                <p class="categories__list-text">Dining</p>
+                        </li>    
+                        <li class="categories__list-item">
+                                <img class="categories__list-image" src="images/livig-room.png" alt="Category 2">
+                                <p class="categories__list-text">Living</p>
+                        </li>                  
+                        <li class="categories__list-item">
+                                <img class="categories__list-image" src="images/bedroom.png" alt="Category 3">
+                                <p class="categories__list-text">Bedroom</p>
+                        </li> 
+                    </ul>
+            </div>
+        </section>
+        
+    </main>
 </body>
 </html>
