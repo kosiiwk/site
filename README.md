@@ -39,3 +39,6 @@ The goal for today was to build a clean, pixel-perfect header component based on
 - Adjusted image proportions with `object-fit: cover` and fixed fixed-height layout bugs.
 - Implemented card badge positioning (`New` / `-30%`) using absolute positioning.
 - Styled and centered the interactive **Show More** call-to-action button.
+
+### 📅 Still day 3: Add room inspiration slider section
+ - tired
