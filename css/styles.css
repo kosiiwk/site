@@ -11,6 +11,7 @@
     --cards-bg: #F4F5F7;
     --old-price: #B0B0B0;
     --overlay-color: #3A3A3A;
+    --inspiration-bg: #FCF8F3;
 }
 
 * {
@@ -348,4 +349,154 @@ a{
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.inspiration {
+    background-color: var(--inspiration-bg);
+    height: 670px;
+    width: 100%;
+}
+
+.products__inspiration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 42px;
+    height: 100%;
+    width: 100%;
+}
+
+.products__inspiration-left {
+    width: 422px;
+    flex-shrink: 0;
+}
+
+.products__inspiration-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.products__inspiration-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--title-color);
+    line-height: 120%;
+}
+
+.products__inspiration-description {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.products__explore {
+    display: inline-block;
+    padding: 13px 36px;
+    background-color: var(--button-color);
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    line-height: 150%;
+    font-weight: 600;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+.products__inspiration-slider {
+    position: relative;
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    max-width: 800px; 
+    overflow: hidden;  
+    padding-bottom: 40px; 
+}
+
+.products__slide {
+    position: relative;
+    flex-shrink: 0;
+    width: 372px;
+    height: 486px;
+}
+
+.products__slide-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.products__slide-active {
+    flex-shrink: 0;
+    width: 404px;
+    height: 582px;
+}
+
+.products__slide-content {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    display: flex;
+    align-items: flex-end;
+    z-index: 10;
+}
+
+.products__slide-card {
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(3px);
+    padding: 32px 24px;
+}
+
+.products__slide-btn {
+    background-color: var(--button-color);
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.products__slider-arrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
+    border: none;
+    color: #B88E2F;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products__slider-dots {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-top: 33px;
+    gap: 12px;
+}
+
+.products__dot {
+    width: 11px;
+    height: 11px;
+    background-color: #D8D8D8;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.products__dot--active {
+    background-color: #B88E2F;
+    outline: 1px solid #B88E2F;
+    outline-offset: 4px;
 }
