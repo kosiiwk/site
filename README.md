@@ -33,3 +33,9 @@ The goal for today was to build a clean, pixel-perfect header component based on
   - Created a 3-card category grid using semantic HTML list structure.
   - Placed category images and titles vertically aligned underneath.
   - Centered section content and set up side margins for clean screen boundaries.
+ 
+### 📅 Day 3: Featured Products Section
+- Built the 8-product card grid layout using **CSS Grid** (`repeat(4, 1fr)`).
+- Adjusted image proportions with `object-fit: cover` and fixed fixed-height layout bugs.
+- Implemented card badge positioning (`New` / `-30%`) using absolute positioning.
+- Styled and centered the interactive **Show More** call-to-action button.
