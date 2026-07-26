@@ -9,12 +9,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link rel="icon" type="image/x-icon" href="images/logo-img.svg">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header class="header">
         <div class="header__container">
             <nav class="header__nav">
-                <img class="header__logo" src="images/logo.svg?v=2" alt="Logo">
+               <a href="index.html"> <img class="header__logo" src="images/logo.svg?v=2" alt="Logo"></a>
                 <ul class="header__list">
                     <li class="header__list-item">
                         <a class="header__list-link" href="/">Home</a>
@@ -80,15 +81,15 @@
                 </div>
                     <ul class="categories__list">
                         <li class="categories__list-item">
-                                <img class="categories__list-image" src="images/Dining.png" alt="Category 1">
+                                <img class="categories__list-image" src="images/Dining.png" alt="dining">
                                 <p class="categories__list-text">Dining</p>
                         </li>    
                         <li class="categories__list-item">
-                                <img class="categories__list-image" src="images/livig-room.png" alt="Category 2">
+                                <img class="categories__list-image" src="images/livig-room.png" alt="living-room">
                                 <p class="categories__list-text">Living</p>
                         </li>                  
                         <li class="categories__list-item">
-                                <img class="categories__list-image" src="images/bedroom.png" alt="Category 3">
+                                <img class="categories__list-image" src="images/bedroom.png" alt="bedroom">
                                 <p class="categories__list-text">Bedroom</p>
                         </li> 
                     </ul>
@@ -101,24 +102,44 @@
             </div>
             <div class="products__cards">
 <!-- ================================================================================================= -->
-                <div class="product__card-single">
+                <article class="product__card-single">
                     <div class="product__img-wrapper">
                         <img class="product__image" src="images/slytherine.png">
                         <span class="product__discount">-30%</span>
                     </div>
-
+                    
                     <div class="product__card-content">
                         <h3 class="product__name">Slytherine</h3>
                         <p class="product__description">Stylish cafe chair</p>
-
+                        
                         <div class="product__prices">
                             <span class="product__price">$120</span>
                             <del class="product__old-price">$150</del>
                         </div>
                     </div>
-                </div>
+                    <div class="product__overlay">
+                        <button type="button" class="product__add-cart" data-id="1">Add to cart</button>
+                        <div class="product__actions">
+                            <!-- Share -->
+                            <button type="button" class="product__action-btn" data-id="1">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                Share
+                            </button>
+                            <!-- Compare -->
+                            <button type="button" class="product__action-btn" data-id="1">
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                                Compare
+                            </button>
+                            <!-- Like -->
+                            <button type="button" class="product__action-btn" data-id="1">
+                                <i class="fa-regular fa-heart"></i>
+                                Like
+                            </button>
+                        </div>
+                    </div>
+                </article>
 <!-- ================================================================================================= -->
-                 <div class="product__card-single">   
+                 <article class="product__card-single">   
                     <div class="product__img-wrapper">
                         <img class="product__image" src="images/leviosa.png">
                        <!-- <span class="product__discount">-30%</span>-->
@@ -132,10 +153,30 @@
                         <span class="product__price">$120</span>
                    <!-- <del class="product__old-price">$150</del> -->
                     </div>
-                </div>
-            </div>
+                    </div>
+                    <div class="product__overlay">
+                        <button type="button" class="product__add-cart" data-id="2">Add to cart</button>
+                        <div class="product__actions">
+                            <!-- Share -->
+                            <button type="button" class="product__action-btn" data-id="2">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                Share
+                            </button>
+                            <!-- Compare -->
+                            <button type="button" class="product__action-btn" data-id="2">
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                                Compare
+                            </button>
+                            <!-- Like -->
+                            <button type="button" class="product__action-btn" data-id="2">
+                                <i class="fa-regular fa-heart"></i>
+                                Like
+                            </button>
+                        </div>
+                    </div>
+                </article>
 <!--================================================================================================= -->
-                <div class="product__card-single">
+                <article class="product__card-single">
                     <div class="product__img-wrapper">
                         <img class="product__image" src="images/lolito.png">
                         <span class="product__discount">-50%</span>
@@ -150,9 +191,29 @@
                             <del class="product__old-price">$1440</del>
                         </div>
                     </div>
-                </div>
+                    <div class="product__overlay">
+                        <button type="button" class="product__add-cart" data-id="3">Add to cart</button>
+                        <div class="product__actions">
+                            <!-- Share -->
+                            <button type="button" class="product__action-btn" data-id="3">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                Share
+                            </button>
+                            <!-- Compare -->
+                            <button type="button" class="product__action-btn" data-id="3">
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                                Compare
+                            </button>
+                            <!-- Like -->
+                            <button type="button" class="product__action-btn" data-id="3">
+                                <i class="fa-regular fa-heart"></i>
+                                Like
+                            </button>
+                        </div>
+                    </div>
+                </article>
 <!-- ================================================================================================= -->
-                <div class="product__card-single">
+                <article class="product__card-single">
                     <div class="product__img-wrapper">
                         <img class="product__image" src="images/respira.png">
                         <span class="product__type">New</span>
@@ -167,9 +228,29 @@
                            <!-- <del class="product__old-price">$1440</del>-->
                         </div>
                     </div>
-                </div>
+                    <div class="product__overlay">
+                        <button type="button" class="product__add-cart" data-id="4">Add to cart</button>
+                        <div class="product__actions">
+                            <!-- Share -->
+                            <button type="button" class="product__action-btn" data-id="4">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                Share
+                            </button>
+                            <!-- Compare -->
+                            <button type="button" class="product__action-btn" data-id="4">
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                                Compare
+                            </button>
+                            <!-- Like -->
+                            <button type="button" class="product__action-btn" data-id="4">
+                                <i class="fa-regular fa-heart"></i>
+                                Like
+                            </button>
+                        </div>
+                    </div>
+                </article>
 <!-- ================================================================================================= -->
-                 <div class="product__card-single">
+                 <article class="product__card-single">
                     <div class="product__img-wrapper">
                         <img class="product__image" src="images/grifo.png">
                      <!-- <span class="product__type">New</span> -->
@@ -184,9 +265,29 @@
                            <!-- <del class="product__old-price">$1440</del>-->
                         </div>
                     </div>
-                </div>
+                    <div class="product__overlay">
+                        <button type="button" class="product__add-cart" data-id="5">Add to cart</button>
+                        <div class="product__actions">
+                            <!-- Share -->
+                            <button type="button" class="product__action-btn" data-id="5">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                Share
+                            </button>
+                            <!-- Compare -->
+                            <button type="button" class="product__action-btn" data-id="5">
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                                Compare
+                            </button>
+                            <!-- Like -->
+                            <button type="button" class="product__action-btn" data-id="5">
+                                <i class="fa-regular fa-heart"></i>
+                                Like
+                            </button>
+                        </div>
+                    </div>
+                 </article>
 <!-- ================================================================================================= -->
-                  <div class="product__card-single">
+                  <article class="product__card-single">
                     <div class="product__img-wrapper">
                         <img class="product__image" src="images/mug.png">
                         <span class="product__type">New</span> 
@@ -201,9 +302,29 @@
                            <!-- <del class="product__old-price">$1440</del>-->
                         </div>
                     </div>
-                </div>
+                    <div class="product__overlay">
+                        <button type="button" class="product__add-cart" data-id="6">Add to cart</button>
+                        <div class="product__actions">
+                            <!-- Share -->
+                            <button type="button" class="product__action-btn" data-id="6">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                Share
+                            </button>
+                            <!-- Compare -->
+                            <button type="button" class="product__action-btn" data-id="6">
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                                Compare
+                            </button>
+                            <!-- Like -->
+                            <button type="button" class="product__action-btn" data-id="6">
+                                <i class="fa-regular fa-heart"></i>
+                                Like
+                            </button>
+                        </div>
+                    </div>
+                  </article>
 <!-- ================================================================================================= -->
-                 <div class="product__card-single">
+                 <article class="product__card-single">
                     <div class="product__img-wrapper">
                         <img class="product__image" src="images/pingky.png">
                         <span class="product__discount">-50%</span>
@@ -218,9 +339,29 @@
                             <del class="product__old-price">$1440</del>
                         </div>
                     </div>
-                </div>
+                    <div class="product__overlay">
+                        <button type="button" class="product__add-cart" data-id="7">Add to cart</button>
+                        <div class="product__actions">
+                            <!-- Share -->
+                            <button type="button" class="product__action-btn" data-id="7">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                Share
+                            </button>
+                            <!-- Compare -->
+                            <button type="button" class="product__action-btn" data-id="7">
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                                Compare
+                            </button>
+                            <!-- Like -->
+                            <button type="button" class="product__action-btn" data-id="7">
+                                <i class="fa-regular fa-heart"></i>
+                                Like
+                            </button>
+                        </div>
+                    </div>
+                 </article>
 <!-- ================================================================================================= -->
-                   <div class="product__card-single">
+                   <article class="product__card-single">
                     <div class="product__img-wrapper">
                         <img class="product__image" src="images/potty.png">
                         <span class="product__type">New</span> 
@@ -235,7 +376,27 @@
                            <!-- <del class="product__old-price">$1440</del>-->
                         </div>
                     </div>
-                </div>
+                    <div class="product__overlay">
+                        <button type="button" class="product__add-cart" data-id="8">Add to cart</button>
+                        <div class="product__actions">
+                            <!-- Share -->
+                            <button type="button" class="product__action-btn" data-id="8">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                Share
+                            </button>
+                            <!-- Compare -->
+                            <button type="button" class="product__action-btn" data-id="8">
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                                Compare
+                            </button>
+                            <!-- Like -->
+                            <button type="button" class="product__action-btn" data-id="8">
+                                <i class="fa-regular fa-heart"></i>
+                                Like
+                            </button>
+                        </div>
+                    </div>
+                   </article>
 <!-- ================================================================================================= -->
                 </div>
             <div class="product__show-more-button">
